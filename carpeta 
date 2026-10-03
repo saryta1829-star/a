@@ -1,0 +1,22 @@
+axiom-core/
+├── .github/                                # Automatizaciones y flujos CI/CD
+│   ├── workflows/
+│   │   ├── ci-android-build.yml           # Compilación, lint y tests nativos Gradle
+│   │   ├── rete-engine-tests.yml          # Suite de verificación formal de inferencia
+│   │   └── release-apk.yml                # Firma automática de APK y publicación de release
+│   ├── ISSUE_TEMPLATE/
+│   │   ├── bug_report.md
+│   │   └── feature_request.md
+│   └── PULL_REQUEST_TEMPLATE.md
+│
+├── android/                               # Proyecto Nativo Android (API Level 34)
+│   ├── build.gradle                       # Gradle raíz del subproyecto Android
+│   ├── settings.gradle
+│   ├── gradle/
+│   │   └── wrapper/
+│   │       ├── gradle-wrapper.jar
+│   │       └── gradle-wrapper.properties
+│   ├── app/
+│   │   ├── build.gradle                   # Dependencias Jetpack Compose, Capacitor runtime
+│   │   ├── proguard-rules.pro             # Reglas de ofuscación y optimización
+│   │   └── src/
